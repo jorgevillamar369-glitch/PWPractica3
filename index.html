@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3 — Lista de Productos y Carrito | Grupo 4</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- ============================================================
+         VERSIÓN ESTÁTICA (para GitHub Pages, que NO ejecuta PHP).
+         Es idéntica a index.php, pero los productos se cargan con
+         JavaScript desde js/productos.js.
+         ============================================================ -->
+
+    <header class="hero">
+        <h1> Tienda Virtual Práctica 3</h1>
+        <p>HTML + CSS + JavaScript + PHP · Lista de productos con carrito de compras</p>
+
+        <div class="integrantes">
+            <h2> Grupo 4 — Integrantes</h2>
+            <ul>
+                <li>Jorge Villamar</li>
+                <li>Norka Mideros</li>
+                <li>Bruce Balarezo</li>
+                <li>Liseth Criollo</li>
+                <li>Chinlle Carrillo</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="barra-carrito">
+        <button id="btnAbrirCarrito" class="btn-carrito">
+            🛒 Carrito <span id="contadorCarrito" class="contador">0</span>
+        </button>
+        <span id="totalCarrito" class="total">$0.00</span>
+    </div>
+
+    <main>
+        <h2 class="titulo-productos">📦 Lista de productos</h2>
+        <section class="rejilla-productos" id="listaProductos">
+            <!-- Los productos se insertan aquí con JavaScript -->
+        </section>
+    </main>
+
+    <aside id="panelCarrito" class="panel-carrito oculto">
+        <div class="panel-cabecera">
+            <h3>🛒 Tu carrito</h3>
+            <button id="btnCerrarCarrito" class="btn-cerrar">✖</button>
+        </div>
+        <ul id="itemsCarrito"></ul>
+        <p id="carritoVacio" class="carrito-vacio">El carrito está vacío.</p>
+        <div class="panel-pie">
+            <strong>Total: <span id="totalPanel">$0.00</span></strong>
+        </div>
+    </aside>
+
+    <footer>
+        <p>Práctica 3 · Programación Web Avanzada · Grupo 4 · <span id="anio"></span></p>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
