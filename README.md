@@ -2,5 +2,5 @@
 
 Lista de productos y carrito de compras con HTML, CSS, JavaScript y PHP.
 
-- Ver en línea: https://jorgevillamar369-glitch.github.io/PWPractica3/
+- Sitio: https://jorgevillamar369-glitch.github.io/PWPractica3/
 - Versión con PHP: https://grupo04.infinityfreeapp.com/
